@@ -506,6 +506,7 @@ footer {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
+  display: flex;
   .card { padding: 24px 20px; }
   .hero-layout { flex-direction: column; text-align: center; }
   .hero-cta { justify-content: center; }
