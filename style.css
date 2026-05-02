@@ -17,11 +17,6 @@
 }
 
 html { scroll-behavior: smooth; }
-
-#home{
-  display: flex;
-}
-
 body {
   font-family: var(--font-display);
   background: var(--bg);
