@@ -510,10 +510,6 @@ footer {
   .hero-layout { flex-direction: column; text-align: center; }
   .hero-cta { justify-content: center; }
   .nav a { padding: 10px 10px; font-size: 11px; }
-  .nav{
-    position: sticky;
-    top: 0;
-  }
 }
 
 img{
