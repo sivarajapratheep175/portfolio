@@ -518,7 +518,7 @@ footer {
   .nav-links{
     flrx-direction: column;
     width: 100%;
-    display: none;
+    display: flex;
   }
   .nav{
     flex-wrap: wrap;
