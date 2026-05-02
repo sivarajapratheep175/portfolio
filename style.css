@@ -91,7 +91,6 @@ header h1 .accent { color: var(--accent); }
 
 /* ===== NAV (sticky on its own) ===== */
 .nav {
-  display: flex;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -506,12 +505,15 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
-  display: flex;
+@media (max-width: 768px) {
   .card { padding: 24px 20px; }
   .hero-layout { flex-direction: column; text-align: center; }
   .hero-cta { justify-content: center; }
   .nav a { padding: 10px 10px; font-size: 11px; }
+  .nav{
+    position: sticky;
+    top: 0;
+  }
 }
 
 img{
