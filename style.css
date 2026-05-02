@@ -18,6 +18,17 @@
 
 html { scroll-behavior: smooth; }
 
+@media (min-width: 768){
+  .container{
+    display: flex;
+  }
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: var(--font-display);
   background: var(--bg);
