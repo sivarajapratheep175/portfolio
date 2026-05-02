@@ -517,7 +517,7 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 100%) {
+@media (max-width: 600px) {
   .card { padding: 24px 20px; }
   .hero-layout { flex-direction: column; text-align: center; }
   .hero-cta { justify-content: center; }
