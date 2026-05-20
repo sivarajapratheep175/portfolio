@@ -1,4 +1,7 @@
-let input = prompt("Enter your name? (I want to know who is viewing my portfolio) :", "Full Name");
-let checking = confirm("Your name is " + input + ". Is that correct?");
- console.log(input);
- console.log(checking);  
+const name = prompt("Enter your name (to see who is viewing my portfolio):");
+
+if (name) {
+  console.log(`Visitor Name: ${name}`);
+} else {
+  console.log("Visitor did not enter a name.");
+}
