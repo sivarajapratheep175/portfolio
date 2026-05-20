@@ -6,6 +6,7 @@ if (name) {
   console.log("Visitor did not enter a name.");
 }
 
+<script>
 // Fade-in on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -31,3 +32,4 @@ if (name) {
       if (a.getAttribute('href') === '#' + current) a.classList.add('active');
     });
   });
+</script>
