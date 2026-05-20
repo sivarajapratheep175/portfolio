@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sivaraja Pratheep | Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sivaraja Pratheep — Computer Science undergraduate, aspiring full-stack developer." />
+  <title>Sivaraja Pratheep | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles (self-contained; also mirrored in style.css) -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <script src ="script.js"> </script>
 
-<!-- Animated background -->
-<div class="bg-grid"></div>
-<div class="bg-glow"></div>
+  <!-- ── Ambient background ── -->
+  <div class="bg-grid"      aria-hidden="true"></div>
+  <div class="bg-glow"      aria-hidden="true"></div>
 
-<!-- HEADER -->
-<header id="home">
-  <div class="header-inner">
-    <div class="header-name">
-      <span class="tag">&lt;dev&gt;</span>
-      <h1>SIVARAJA<br><span class="accent">PRATHEEP</span></h1>
-      <span class="tag">&lt;/dev&gt;</span>
-    </div>
-    <p class="header-sub">Undergraduate &nbsp;·&nbsp; Aspiring Full Stack Developer &nbsp;·&nbsp; Tech Enthusiast</p>
-    <nav class="nav">
-      <ul>
+  <!-- ── Sticky Nav ── -->
+  <nav class="nav" id="mainNav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand" aria-label="Home">SP<span class="nav-dot"></span></a>
+      <ul role="list" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -35,168 +33,180 @@
         <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-
-  <!-- HERO / HOME -->
-  <section class="card hero-card fade-in">
-    <div class="hero-layout">
-      <div class="hero-img-wrap">
-        <div class="img-ring"></div>
-        <img src="logo.jpeg" alt="Sivaraja Pratheep">
-        <div class="img-dot top"></div>
-        <div class="img-dot bottom"></div>
-      </div>
-      <div class="hero-text">
-        <p class="hero-greeting">👋 Hello, I'm</p>
-        <h2 class="hero-name">Sivaraja Pratheep</h2>
-        <p class="hero-desc">
-          A Computer Science undergraduate passionate about <span class="highlight">Web Development</span>, <span class="highlight">AI</span>, and <span class="highlight">Cloud technologies</span>. I aim to build innovative solutions that create real-world impact.
-        </p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn-primary">Get in Touch</a>
-          <a href="#projects" class="btn-outline">View Projects</a>
-        </div>
-      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
     </div>
-  </section>
+  </nav>
 
-  <!-- ABOUT -->
-  <section class="card fade-in" id="about">
-    <div class="section-label">01 &mdash; ABOUT</div>
-    <h2>About Me</h2>
-    <p>
-      I am a <strong>B.Sc. Computer Science</strong> undergraduate at the <strong>University of Jaffna</strong> with a strong interest in software development and emerging technologies. I completed my school education at Methodist Central College.
-    </p>
-    <p>
-      I enjoy learning new technologies such as <strong>Salesforce</strong> and continuously improving my skills in programming and web development. In my free time, I also enjoy creative work like video editing using <strong>Adobe</strong> tools.
-    </p>
-    <div class="cv-block">
-      <a href="resume.pdf" download class="btn-primary">
-        <i class="fa-solid fa-download"></i> Download resume
-      </a>
-      <span class="cv-note">⚠ resume will be updated soon</span>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="card fade-in" id="skills">
-    <div class="section-label">02 &mdash; SKILLS</div>
-    <h2>Skills & Tools</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h4>Web & Dev</h4>
-        <div class="skill-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>Java</span>
-          <span>Python</span>
-          <span>MySQL</span>
-          <span>Git & GitHub</span>
-          <span>Salesforce</span>
-        </div>
+  <!-- ── Header / Hero ── -->
+  <header id="home">
+    <div class="header-inner">
+      <div class="header-badge">
+        <span class="tag" aria-hidden="true">&lt;dev&gt;</span>
+        <h1>SIVARAJA<br /><span class="accent">PRATHEEP</span></h1>
+        <span class="tag" aria-hidden="true">&lt;/dev&gt;</span>
       </div>
-      <div class="skill-category">
-        <h4>Design & Creative</h4>
-        <div class="skill-tags">
-          <span>Photoshop</span>
-          <span>InDesign</span>
-        <!--  <span>Lightroom Classic</span> -->
-        <!-- <span>Premiere Pro</span> -->  
-        <!--  <span>Illustrator</span> -->  
-        <!-- <span>DaVinci Resolve</span> -->  
-          
-        </div>
-      </div>
+      <p class="header-sub">Undergraduate &nbsp;·&nbsp; Aspiring Full-Stack Developer &nbsp;·&nbsp; Tech Enthusiast</p>
     </div>
-  </section>
+  </header>
 
-  <!-- PROJECTS -->
-  <section class="card fade-in" id="projects">
-    <div class="section-label">03 &mdash; PROJECTS</div>
-    <h2>Projects</h2>
-  <!-- Project -01 -->
-    <div class="project-grid">
-      <div class="project-card">
-        <div class="project-icon"><i class="fa-solid fa-code"></i></div>
-        <div class="project-info">
-          <h3>Portfolio</h3>
-          <p>A responsive personal portfolio built with HTML and CSS to showcase skills, projects, and certificates.</p>
-          <div class="project-tags">
-            <span>HTML</span><span>CSS</span>
+  <!-- ── Main content ── -->
+  <main class="container" id="mainContent">
+
+    <!-- HERO CARD -->
+    <section class="card hero-card reveal" aria-label="Introduction">
+      <div class="hero-layout">
+        <div class="hero-img-wrap" aria-hidden="true">
+          <div class="img-ring"></div>
+          <img src="logo.jpeg" alt="Sivaraja Pratheep profile photo" width="130" height="130" />
+          <span class="img-dot top"></span>
+          <span class="img-dot bottom"></span>
+        </div>
+        <div class="hero-text">
+          <p class="hero-greeting">👋 Hello, I'm</p>
+          <h2 class="hero-name">Sivaraja Pratheep</h2>
+          <p class="hero-desc">
+            A Computer Science undergraduate passionate about
+            <span class="highlight">Web Development</span>,
+            <span class="highlight">AI</span>, and
+            <span class="highlight">Cloud technologies</span>.
+            I aim to build innovative solutions that create real-world impact.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn-primary">Get in Touch</a>
+            <a href="#projects" class="btn-outline">View Projects</a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-<!-- Project -02 -->
-     <div class="project-grid">
-      <div class="project-card">
-        <div class="project-icon"><i class="fa-solid fa-code"></i></div>
-        <div class="project-info">
-          <h3>Personal Web Presence Portfolio</h3>
-          <p>One place for all my social media links 🌐.</p>
-             <a href="https://sivarajapratheep175.github.io/PersonalWebPresence/" target="_blank">
-                   <i class="fa fa-link" aria-hidden="true"></i> 
-                   </a>
-           <div class="project-tags">
-            <span>HTML</span><span>CSS</span>
-          </div>
+    <!-- ABOUT -->
+    <section class="card reveal" id="about" aria-labelledby="about-heading">
+      <p class="section-label" aria-hidden="true">01 — ABOUT</p>
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        I am a <strong>B.Sc. Computer Science</strong> undergraduate at the
+        <strong>University of Jaffna</strong> with a strong interest in software development
+        and emerging technologies. I completed my school education at Methodist Central College.
+      </p>
+      <p>
+        I enjoy learning new technologies such as <strong>Salesforce</strong> and continuously
+        improving my skills in programming and web development. In my free time, I also enjoy
+        creative work like video editing using <strong>Adobe</strong> tools.
+      </p>
+      <div class="cv-block">
+        <a href="resume.pdf" download class="btn-primary">
+          <i class="fa-solid fa-download" aria-hidden="true"></i> Download Résumé
+        </a>
+        <span class="cv-note">⚠ Résumé will be updated soon</span>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="card reveal" id="skills" aria-labelledby="skills-heading">
+      <p class="section-label" aria-hidden="true">02 — SKILLS</p>
+      <h2 id="skills-heading">Skills &amp; Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Web &amp; Development</h3>
+          <ul class="skill-tags" role="list">
+            <li>HTML</li><li>CSS</li><li>Java</li>
+            <li>Python</li><li>MySQL</li><li>Git &amp; GitHub</li>
+            <li>Salesforce</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Design &amp; Creative</h3>
+          <ul class="skill-tags" role="list">
+            <li>Photoshop</li><li>InDesign</li>
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <p class="coming-soon"><i class="fa-solid fa-clock"></i> More projects coming soon!</p>
-  </section>
+    <!-- PROJECTS -->
+    <section class="card reveal" id="projects" aria-labelledby="projects-heading">
+      <p class="section-label" aria-hidden="true">03 — PROJECTS</p>
+      <h2 id="projects-heading">Projects</h2>
+      <div class="project-list">
 
-  <!-- CERTIFICATES -->
-  <section class="card fade-in" id="certificates">
-    <div class="section-label">04 &mdash; CERTIFICATES</div>
-    <h2>Certificates</h2>
-    <div class="cert-list">
-      <a href="https://www.hackerrank.com/certificates/iframe/ee518ca7fd75" target="_blank" class="cert-item">
-        <i class="fa-brands fa-hackerrank"></i>
-        <span>HackerRank Certificate</span>
-        <i class="fa-solid fa-arrow-up-right-from-square cert-arrow"></i>
+        <article class="project-card">
+          <div class="project-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+          <div class="project-info">
+            <h3>Portfolio</h3>
+            <p>A responsive personal portfolio built with HTML and CSS to showcase skills, projects, and certificates.</p>
+            <ul class="project-tags" role="list">
+              <li>HTML</li><li>CSS</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon" aria-hidden="true"><i class="fa-solid fa-globe"></i></div>
+          <div class="project-info">
+            <h3>Personal Web Presence</h3>
+            <p>One place for all my social media links — a clean link-in-bio page.</p>
+            <a href="https://sivarajapratheep175.github.io/PersonalWebPresence/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fa fa-arrow-up-right-from-square" aria-hidden="true"></i> View Live
+            </a>
+            <ul class="project-tags" role="list">
+              <li>HTML</li><li>CSS</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+      <p class="coming-soon"><i class="fa-solid fa-clock" aria-hidden="true"></i> More projects coming soon!</p>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="card reveal" id="certificates" aria-labelledby="certs-heading">
+      <p class="section-label" aria-hidden="true">04 — CERTIFICATES</p>
+      <h2 id="certs-heading">Certificates</h2>
+      <ul class="cert-list" role="list">
+        <li>
+          <a href="https://www.hackerrank.com/certificates/iframe/ee518ca7fd75" target="_blank" rel="noopener noreferrer" class="cert-item">
+            <i class="fa-brands fa-hackerrank" aria-hidden="true"></i>
+            <span>HackerRank Certificate</span>
+            <i class="fa-solid fa-arrow-up-right-from-square cert-arrow" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="coming-soon"><i class="fa-solid fa-clock" aria-hidden="true"></i> More certificates coming soon!</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card reveal" id="contact" aria-labelledby="contact-heading">
+      <p class="section-label" aria-hidden="true">05 — CONTACT</p>
+      <h2 id="contact-heading">Get In Touch</h2>
+      <p>Feel free to reach out — whether it's about collaboration, opportunities, or just a hello!</p>
+      <a href="mailto:sivarajapratheep175@gmail.com" class="contact-email">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        sivarajapratheep175@gmail.com
       </a>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer role="contentinfo">
+    <p class="footer-title">Connect with me</p>
+    <div class="social-links" role="list">
+      <a href="https://www.linkedin.com/in/sivarajapratheep175/"  target="_blank" rel="noopener noreferrer" title="LinkedIn"   role="listitem"><i class="fa-brands fa-linkedin"   aria-hidden="true"></i></a>
+      <a href="https://x.com/pratheep175"                          target="_blank" rel="noopener noreferrer" title="X/Twitter"  role="listitem"><i class="fa-brands fa-x-twitter"  aria-hidden="true"></i></a>
+      <a href="https://www.threads.com/@sivarajapratheep175"       target="_blank" rel="noopener noreferrer" title="Threads"    role="listitem"><i class="fa-brands fa-threads"    aria-hidden="true"></i></a>
+      <a href="https://www.salesforce.com/trailblazer/sivarajapratheep175" target="_blank" rel="noopener noreferrer" title="Salesforce" role="listitem"><i class="fa-brands fa-salesforce" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/sivarajapratheep175/"     target="_blank" rel="noopener noreferrer" title="Instagram"  role="listitem"><i class="fa-brands fa-instagram"  aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/pratheep.sivarajaa"        target="_blank" rel="noopener noreferrer" title="Facebook"   role="listitem"><i class="fa-brands fa-facebook"   aria-hidden="true"></i></a>
+      <a href="https://github.com/sivarajapratheep175"             target="_blank" rel="noopener noreferrer" title="GitHub"     role="listitem"><i class="fa-brands fa-github"     aria-hidden="true"></i></a>
+      <a href="https://open.spotify.com/user/31sohwvbsyhklhgvnzzmhhadyvei" target="_blank" rel="noopener noreferrer" title="Spotify" role="listitem"><i class="fa-brands fa-spotify" aria-hidden="true"></i></a>
     </div>
-    <p class="coming-soon"><i class="fa-solid fa-clock"></i> More certificates coming soon!</p>
-  </section>
+    <p class="footer-copy">© 2026 Sivaraja Pratheep. All rights reserved.</p>
+  </footer>
 
-  <!-- CONTACT -->
-  <section class="card fade-in" id="contact">
-    <div class="section-label">05 &mdash; CONTACT</div>
-    <h2>Get In Touch</h2>
-    <p>Feel free to reach out — whether it's about collaboration, opportunities, or just a hello!</p>
-    <a href="mailto:sivarajapratheep175@gmail.com" class="contact-email">
-      <i class="fa-solid fa-envelope"></i>
-      sivarajapratheep175@gmail.com
-    </a>
-  </section>
-
-</main>
-
-<!-- FOOTER -->
-<footer>
-  <p class="footer-title">Connect with me</p>
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/pratheep175/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://www.x.com/in/pratheep175/" target="_blank" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-    <!-- <a href="https://bsky.app/profile/pratheep175.bsky.social" target="_blank" title="X / Twitter"><i class="fa-brands fa-bluesky"></i></a> -->
-    <a href="https://www.threads.com/in/pratheep175/" target="_blank" title="Threads"><i class="fa-brands fa-threads"></i></a>
-    <a href="https://www.salesforce.com/trailblazer/pratheep175" target="_blank" title="Salesforce"><i class="fa-brands fa-salesforce"></i></a>
-    <a href="https://www.instagram.com/pratheep_175/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.facebook.com/share/1AbM762mVH/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-    <a href="http://www.youtube.com/@gcore175" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-    <a href="https://open.spotify.com/user/31sohwvbsyhklhgvnzzmhhadyvei" target="_blank" title="Spotify"><i class="fa-brands fa-spotify"></i></a>
-    <a href="https://github.com/pratheep175" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-  </div>
-  <p class="footer-copy">© 2026 SIVARAJA PRATHEEP </p>
-  <p> All rights reserved</p>
-</footer>
+  <!-- JS deferred — runs after DOM is ready -->
+  <script src="script.js" defer></script>
 
 </body>
 </html>
