@@ -194,36 +194,9 @@
     <a href="https://open.spotify.com/user/31sohwvbsyhklhgvnzzmhhadyvei" target="_blank" title="Spotify"><i class="fa-brands fa-spotify"></i></a>
     <a href="https://github.com/pratheep175" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
   </div>
-  <p class="footer-copy">© 2026 sivarajapratheep175 &nbsp;·&nbsp; All rights reserved</p>
+  <p class="footer-copy">© 2026 SIVARAJA PRATHEEP </p>
+  <p> All rights reserved</p>
 </footer>
-
-<script>
-  // Fade-in on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.12 });
-
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-  // Active nav highlight
-  const sections = document.querySelectorAll('section[id], header[id]');
-  const navLinks = document.querySelectorAll('.nav a');
-
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 120) current = s.id;
-    });
-    navLinks.forEach(a => {
-      a.classList.remove('active');
-      if (a.getAttribute('href') === '#' + current) a.classList.add('active');
-    });
-  });
-</script>
 
 </body>
 </html>
