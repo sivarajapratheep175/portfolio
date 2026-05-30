@@ -53,6 +53,7 @@ img {
   display: block;
 }
 
+
 ul { list-style: none; }
 a  { text-decoration: none; }
 
@@ -119,14 +120,11 @@ a  { text-decoration: none; }
   gap: 3px;
   margin-right: auto;
 }
-
-.nav-dot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
+.nav-brand img {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: var(--accent);
-  margin-bottom: 1px;
+  object-fit: cover;
 }
 
 .nav ul {
